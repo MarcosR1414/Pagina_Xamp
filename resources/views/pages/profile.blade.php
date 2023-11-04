@@ -11,7 +11,7 @@
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">User Perfil</li>
+              <li class="breadcrumb-item active">Perfil de usuario</li>
             </ol>
           </div>
         </div>
@@ -29,7 +29,7 @@
               <div class="card-body box-profile">
                 <div class="text-center">
                   <img class="profile-user-img img-fluid img-circle"
-                       src="../assets/img/avatar4.png"
+                       src="../assets/img/avatar6.png"
                        alt="User profile picture">
                 </div>
  
@@ -65,32 +65,32 @@
                 <strong><i class="fas fa-book mr-1"></i> Educación</strong>
  
                 <p class="text-muted">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, adipisci?
+                  Senati - Huánuco
                 </p>
  
                 <hr>
  
                 <strong><i class="fas fa-map-marker-alt mr-1"></i> Ubicación</strong>
  
-                <p class="text-muted">Lorem ipsum , dolor sit amet.</p>
+                <p class="text-muted">Huánuco</p>
  
                 <hr>
  
                 <strong><i class="fas fa-pencil-alt mr-1"></i> Habilidades</strong>
  
                 <p class="text-muted">
-                  <span class="tag tag-danger">UI Design</span>
-                  <span class="tag tag-success">Coding</span>
+                  <span class="tag tag-danger">HTML</span>
+                  <span class="tag tag-success">Css</span>
                   <span class="tag tag-info">Javascript</span>
                   <span class="tag tag-warning">PHP</span>
-                  <span class="tag tag-primary">Node.js</span>
+                  <span class="tag tag-primary">...</span>
                 </p>
  
                 <hr>
  
                 <strong><i class="far fa-file-alt mr-1"></i> Notas</strong>
  
-                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fermentum enim neque.</p>
+                <p class="text-muted">Este es un proyecto</p>
               </div>
               <!-- /.card-body -->
             </div>
@@ -109,20 +109,20 @@
               <div class="card-body">
                 <div class="tab-content">
                   <div class="active tab-pane" id="activity">
-                  activity
+                  No hay actividad por ahora xd
                   </div>
                   <!-- /.tab-pane -->
                   <div class="tab-pane" id="timeline">
-                    timeline
+                    03-2023
                   </div>
                   <!-- /.tab-pane -->
  
                   <div class="tab-pane" id="settings">
                     <form class="form-horizontal">
                       <div class="form-group row">
-                        <label for="inputName" class="col-sm-2 col-form-label">Name</label>
+                        <label for="inputName" class="col-sm-2 col-form-label">Usuario</label>
                         <div class="col-sm-10">
-                          <input type="email" class="form-control" id="inputName" placeholder="Name">
+                          <input type="email" class="form-control" id="inputName" placeholder="Usuario">
                         </div>
                       </div>
                       <div class="form-group row">
@@ -132,15 +132,15 @@
                         </div>
                       </div>
                       <div class="form-group row">
-                        <label for="inputName2" class="col-sm-2 col-form-label">Name</label>
+                        <label for="inputName2" class="col-sm-2 col-form-label">Nombre</label>
                         <div class="col-sm-10">
-                          <input type="text" class="form-control" id="inputName2" placeholder="Name">
+                          <input type="text" class="form-control" id="inputName2" placeholder="Nombre">
                         </div>
                       </div>
                       <div class="form-group row">
-                        <label for="inputExperience" class="col-sm-2 col-form-label">Experience</label>
+                        <label for="inputExperience" class="col-sm-2 col-form-label">Experiencia</label>
                         <div class="col-sm-10">
-                          <textarea class="form-control" id="inputExperience" placeholder="Experience"></textarea>
+                          <textarea class="form-control" id="inputExperience" placeholder="Experiencia"></textarea>
                         </div>
                       </div>
                       <div class="form-group row">

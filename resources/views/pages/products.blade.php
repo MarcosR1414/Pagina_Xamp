@@ -24,7 +24,7 @@
         <div class="row">
         <div class="col-md-4">
             <div class="d-flex align-items-center justify-content-around">
-            <p class="mb-0">Ornedado_por::</p>
+            <p class="mb-0">Ordenar por::</p>
             <select class="form-control w-75" id="sortBy">
                 <option value=""  {{ request()->sort == '' ? 'selected' : '' }}>El último</option>
                 <option value="asc" {{ request()->sort == 'asc' ? 'selected' : '' }}>Ascendente</option>

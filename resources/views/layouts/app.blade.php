@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title> User perfil</title>
-
+ 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome -->
@@ -30,31 +30,27 @@
     </ul>
   </nav>
   <!-- /.navbar -->
-
+ 
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="#" class="brand-link">
-      <img src="../assets/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-      <span class="brand-text font-weight-light">Tiendita 1.0</span>
+      <img src="../assets/img/AdminLTELogo1.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <span class="brand-text font-weight-light">Tienda de electronica</span>
     </a>
-
+ 
     <!-- Sidebar -->
     <div class="sidebar">
       <!-- Sidebar user (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
-          <img src="../assets/img/avatar4.png" class="img-circle elevation-2" alt="User Image">
+          <img src="../assets/img/avatar6.png" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-
-            @if (Auth::check())
-    <a href="#" class="d-block">{{ Auth::user()->name }}</a>
-@endif
-
+          <a href="#" class="d-block">{{ Auth::user()->name }}</a>
         </div>
       </div>
-
+ 
       <!-- SidebarSearch Form -->
       <div class="form-inline">
         <div class="input-group" data-widget="sidebar-search">
@@ -66,7 +62,7 @@
           </div>
         </div>
       </div>
-
+ 
       <!-- Sidebar Menu -->
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
@@ -74,31 +70,31 @@
             <a href="#" class="nav-link active">
               <i class="nav-icon fas fa-book"></i>
               <p>
-                Pages
+                Opciones
                 <i class="fas fa-angle-left right"></i>
               </p>
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="{{ route('product.index') }}" class="nav-link">
+                <a href="{{ route('product.index') }}" class="nav-link"> 
                   <i class="far fa-circle nav-icon"></i>
                   <p>Productos</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{ route('product.create') }}" class="nav-link">
+                <a href="{{ route('product.create') }}" class="nav-link"> 
                   <i class="far fa-circle nav-icon"></i>
                   <p>Agregar productos</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{ route('product.my') }}" class="nav-link">
+                <a href="{{ route('product.my') }}" class="nav-link"> 
                   <i class="far fa-circle nav-icon"></i>
                   <p>Mi Producto</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{ route('profile.purchase') }}" class="nav-link">
+                <a href="{{ route('profile.purchase') }}" class="nav-link"> 
                   <i class="far fa-circle nav-icon"></i>
                   <p>Compra</p>
                 </a>
@@ -112,7 +108,7 @@
               <li class="nav-item">
                 <a href="{{ route('logout') }}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Logout</p>
+                  <p>Salir</p>
                 </a>
               </li>
             </ul>
@@ -123,7 +119,7 @@
     </div>
     <!-- /.sidebar -->
   </aside>
-
+  
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     @if(session('success'))
@@ -136,10 +132,10 @@
         {{ session('error') }}
       </div>
     @endif
-
+ 
     @yield('content')
   </div>
-
+  
 
   <!-- Control Sidebar -->
   <aside class="control-sidebar control-sidebar-dark">
@@ -149,7 +145,7 @@
 
 </div>
 <!-- ./wrapper -->
-
+ 
 <!-- jQuery -->
 <script src="../assets/jquery/jquery.min.js"></script>
 <!-- Bootstrap 4 -->

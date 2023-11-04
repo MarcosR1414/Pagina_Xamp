@@ -1,7 +1,8 @@
 @extends('layouts.app')
  
 @section('content')
-    
+<link rel="stylesheet" type="text/css" href="{{ asset('css/login.blade.css') }}">
+
     <section class="content-header">
       <div class="container-fluid">
         <div class="row mb-2">

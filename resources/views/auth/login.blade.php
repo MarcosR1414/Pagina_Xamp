@@ -1,58 +1,101 @@
-@extends('layouts.app')
-
-@section('content')
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <link href="{{ asset('css/login.blade.css') }}" rel="stylesheet">
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.9/css/unicons.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
-    <link href="https://www.dafontfree.net/embed/c2FudGVsaWEtcm91Z2gtYWx0LWJvbGQtdGhyZG1vJmRhdGEvNTEvcy8/2MTkzMi9TYA50RWxpYVJvdWdoQWx0Qm9sZFRockRFTU8ub3Rm" rel="stylesheet" type="text/css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>login</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../../assets/fontawesome-free/css/all.min.css">
+  <!-- icheck bootstrap -->
+  <link rel="stylesheet" href="../../assets/icheck-bootstrap/icheck-bootstrap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../../assets/css/adminlte.min.css">
+  
+  <link href="{{ asset('css/login.blade.css') }}" rel="stylesheet">
 </head>
 
 <body class="img" style="background-image: url(fondo/fond.jpg);">
-    <div class="Nil">
-        <h1>Senati</h1>
-    </div>
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="login-box">
-                <h2>Iniciar sesión</h2>
-
-                @if (isset($_GET['mensaje']))
-                    <p style="color:white">{{ htmlspecialchars($_GET['mensaje']) }}</p>
-                @endif
-
-                <form method="POST" action="{{ route('login') }}">
-                    @csrf
-                    <div class="user-box">
-                        <input type="text" name="name" required>
-                        <label for="name">nombre del usuario</label>
-                    </div>
-                    <div class="user-box">
-                        <input type="password" name="password" required>
-                        <label for="password">Contraseña</label>
-                    </div>
-
-                    <div class="row mb-0">
-                        <div class="col-md-8 offset-md-4">
-                            <button type="submit" class="button">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                Iniciar sesión
-                            </button>
-
-                            @if (Route::has('password.request'))
-                                <a class="btn btn-link" href="{{ route('password.request') }}">
-                                    {{ __('Forgot Your Password?') }}
-                                </a>
-                            @endif
-                        </div>
-                    </div>
-                </form>
+<div class="login-box">
+<h2>Iniciar sesión</h2>
+  <!-- /.login-logo -->
+  <div class="container">
+    <div class="row justify-content-center">
+      
+      @if(session('success'))
+            <div class="alert alert-success" role="alert">
+                {{ session('success') }}
             </div>
+        @endif
+        @if(session('error'))
+            <div class="alert alert-danger text-light" role="alert">
+              {{ session('error') }}
+            </div>
+        @endif
+
+      <form action="{{ route('login') }}" method="POST">
+        @csrf
+
+        <div class="input-group mb-3">
+          <input type="text" name="username" class="form-control" placeholder="Nombre de usuario">
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fa-envelope"></span>
+            </div>
+          </div>
         </div>
+        <div class="input-group mb-3">
+          <input type="password"  name="password" class="form-control" placeholder="Contraseña">
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fa-lock"></span>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-8" >
+            <div class="icheck-primary">
+              <input type="checkbox" id="remember">
+              <label for="remember" style="color: #ffffff;">
+                Recordar
+              </label>
+            </div>
+          </div>
+          <!-- /.col -->
+          <div class="col-4">
+          <button type="submit" class="button">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    Iniciar
+</button>
+          </div>
+          <!-- /.col -->
+        </div>
+      </form>
+
+      
+      <!-- /.social-auth-links -->
+
+      
+      <p class="mb-0">
+        <a href="{{ route('register') }}" class="text-center" style="color: #ffffff;">Crear cuenta</a>
+      </p>
     </div>
+    <!-- /.login-card-body -->
+  </div>
+</div>
+<!-- /.login-box -->
+
+<!-- jQuery -->
+<script src="../../assets/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="../../assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="../../assets/js/adminlte.min.js"></script>
 </body>
-@endsection
+</html>
 

@@ -2,10 +2,7 @@ html {
   height: 100%;
 }
 
-body {
-  background-image: url('/fondo/fond.jpg');
-  
-}
+
 
 /* Estilos para el contenedor principal */
 .Nil {
@@ -184,7 +181,7 @@ text-transform: uppercase;
 overflow: hidden;
 transition: .5s;
 margin-top: 40px;
-letter-spacing: 4px;
+letter-spacing: 1px;
 background: none;
 border-radius: 5px;
 
@@ -454,13 +451,13 @@ position: relative;
 display: inline-block;
 padding: 10px 20px;
 color: #ffffff;
-font-size: 16px;
+font-size: 15px;
 text-decoration: none;
 text-transform: uppercase;
 overflow: hidden;
 transition: .5s;
-margin-top: 40px;
-letter-spacing: 4px;
+margin-top: 30px;
+letter-spacing: 1px;
 background: none;
 border-radius: 5px;
 
@@ -502,3 +499,28 @@ box-shadow: 0 0 5px #43e9ff,
             0 0 50px #8bdaff,
             0 0 100px #4dc4cc;
 }
+.login-box4 {
+  position: relative;
+  top: 50%;
+  left: 100%;
+  width: 600px;
+  padding: 40px;
+  transform: translate(-50%, -00%);
+  background: rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 10px;
+}
+.login-box5 {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  width: 300px;
+  padding: 40px;
+  transform: translate(-00%, -00%);
+  background: rgba(255, 255, 255, 0.5);
+  box-sizing: border-box;
+  box-shadow: 0 10px 20px rgba(0,0,0,.6);
+  border-radius: 10px;
+}
+
